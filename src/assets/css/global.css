@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;500&family=Open+Sans:wght@400&display=swap');
+@import url(default.css);
+
+:root {
+  --primary-font: "Nunito", sans-serif;
+  --secondary-font: "Open Sans", sans-serif;
+  --primary-color: #00a7e1;
+  --secondary-color: #003459;
+  --light-color: #fff;
+  --dark-color: #00171f;
+  --padding-1: 5px;
+  --padding-2: 10px;
+  --padding-3: 15px;
+  --padding-4: 20px;
+  --margin-0: 0px;
+  --margin-1: 5px;
+  --margin-2: 10px;
+  --margin-3: 15px;
+  --margin-4: 20px;
+  --border-radius: 5px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--primary-font);
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+.screen-container {
+  width: 100vw;
+  height: 100vh;
+}
+
+.btn {
+  font-family: var(--secondary-font);
+  text-decoration: none;
+  font-style: none;
+  padding: var(--padding-2);
+  border-radius: var(--border-radius); 
+}
+.btn-primary { 
+  color: var(--light-color);
+  background: var(--primary-color);
+}
+.btn-secondary {
+  color: var(--light-color);
+  background: var(--secondary-color);
+}
+.btn-light {
+  color: var(--dark-color);
+  background: var(--light-color);
+  border: var(--dark-color) 1px solid;
+}
+.btn-dark {
+  color: var(--light-color);
+  background: var(--dark-color);
+}
+.btn-transparent {
+  color: var(--light-color);
+  background: none;
+  border: var(--light-color) 1px solid;
+}

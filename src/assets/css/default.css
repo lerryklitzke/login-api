@@ -1,0 +1,83 @@
+/* Margin and Padding */
+.mg-1 {
+  margin: var(--margin-1);
+}
+.mg-2 {
+  margin: var(--margin-2);
+}
+.mg-3 {
+  margin: var(--margin-3);
+}
+.mg-4 {
+  margin: var(--margin-4);
+}
+.mg-auto {
+  margin: auto;
+}
+.pd-1 {
+  padding: var(--padding-1);
+}
+.pd-2 {
+  padding: var(--padding-2);
+}
+.pd-3 {
+  padding: var(--padding-3);
+}
+.pd-4 {
+  padding: var(--padding-4);
+}
+
+
+/* Text */
+.tx-center {
+  text-align: center;
+}
+.tx-light {
+  color: var(--light-color);
+}
+.tx-bold {
+  font-weight: bold;
+}
+
+/* Background */
+.bg-primary {
+  background: var(--primary-color);
+}
+.bg-secondary {
+  background: var(--secondary-color);
+}
+.bg-light {
+  background: var(--light-color);
+}
+.bg-dark {
+  background: var(--dark-color);
+}
+
+/* Heads */
+h1 {
+  font-size: 2rem;
+}
+h2 {
+  font-size: 1.6rem;
+}
+
+/* Flexbox */
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+.flex-justify-between {
+  justify-content: space-between;
+}
+
+/* Positions */
+.p-relative {
+  position: relative;
+}
+.p-absolute {
+  position: absolute;
+}
+.p-sticky {
+  position: sticky;
+}
+
