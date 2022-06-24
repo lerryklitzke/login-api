@@ -1,5 +1,5 @@
 <template>
-  <nav id="navbar" class="pd-4 bg-light p-sticky">
+  <nav id="navbar" class="pd-4 bg-light">
     <div class="container flex-row flex-justify-between flex-align-center">
       <div id="logo">
         <h1 class="primary-color">Todplay</h1>

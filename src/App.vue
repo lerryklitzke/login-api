@@ -1,7 +1,7 @@
 <template>
-  <div class="screen-container p-relative">
+  <div class="bg-light">
     <TheNavbar />
-    <router-view id="renderer"></router-view>
+    <router-view></router-view>
     <TheFooter />
   </div>
 </template>
@@ -17,10 +17,3 @@ export default {
   }   
 }
 </script>
-
-<style scoped>
-#renderer {
-  height: 100%;
-  width: 100%;
-}
-</style>

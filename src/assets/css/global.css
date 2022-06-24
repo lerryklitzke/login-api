@@ -7,8 +7,9 @@
   --primary-color: #00a7e1;
   --secondary-color: #003459;
   --reverse-color: #ff581e;
-  --light-color: #fff;
+  --light-color: #f4f4f4;
   --dark-color: #00171f;
+  --white-color: #fff;
   --padding-1: 5px;
   --padding-2: 10px;
   --padding-3: 15px;
@@ -19,6 +20,12 @@
   --margin-3: 15px;
   --margin-4: 20px;
   --border-radius: 5px;
+  --box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  --line-height: 1.5rem;
+  --font-size-1: 1rem; 
+  --font-size-2: 1.2rem; 
+  --font-size-3: 1.4rem; 
+  --font-size-4: 1.6rem; 
 }
 
 * {
@@ -31,6 +38,18 @@ body {
   margin: 0;
   padding: 0;
   font-family: var(--primary-font);
+}
+
+p {
+  line-height: var(--line-height);
+  font-size: var(--font-size-2);
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
 }
 
 .container {
@@ -75,4 +94,18 @@ body {
   color: var(--light-color);
   background: none;
   border: var(--light-color) 1px solid;
+}
+
+.input {
+  width: 100%;
+  height: 2.2rem;
+  padding: var(--padding-2);
+  box-shadow: var(--box-shadow);
+  border: none;
+  border-radius: var(--border-radius);
+  font-family: var(--primary-font);
+}
+
+.box {
+  box-shadow: var(--box-shadow);
 }

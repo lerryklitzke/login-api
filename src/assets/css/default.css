@@ -14,6 +14,9 @@
 .dark-color {
   color: var(--dark-color);
 }
+.white-color {
+  color: var(--white-color);
+}
 
 /* Margin and Padding */
 .mg-1 {
@@ -69,6 +72,9 @@
 .bg-dark {
   background: var(--dark-color);
 }
+.bg-white {
+  background: var(--white-color);
+}
 
 /* Headers */
 h1 {
@@ -77,8 +83,15 @@ h1 {
 h2 {
   font-size: 1.6rem;
 }
+h3 {
+  font-size: 1.3rem;
+}
 
 /* Flexbox */
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
 .flex-row {
   display: flex;
   flex-direction: row;

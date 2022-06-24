@@ -1,7 +1,7 @@
 <template>
-  <footer id="footer" class="bg-primary pd-2 p-absolute">
+  <footer id="footer" class="bg-light pd-4">
     <div class="container">
-      <p class="tx-center light-color">Lerry Klitzke 2022 &copy;</p>
+      <p class="tx-center dark-color">Lerry Klitzke 2022 &copy;</p>
     </div>
   </footer>
 </template>
