@@ -10,6 +10,7 @@
   --light-color: #f4f4f4;
   --dark-color: #00171f;
   --white-color: #fff;
+  --transparent-color: rgb(0, 0, 0, 0.3);
   --padding-1: 5px;
   --padding-2: 10px;
   --padding-3: 15px;
@@ -20,8 +21,9 @@
   --margin-3: 15px;
   --margin-4: 20px;
   --border-radius: 5px;
+  --border-rounded: 100px;
   --box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
-  --line-height: 1.5rem;
+  --line-height: 1.8rem;
   --font-size-1: 1rem; 
   --font-size-2: 1.2rem; 
   --font-size-3: 1.4rem; 
@@ -40,16 +42,20 @@ body {
   font-family: var(--primary-font);
 }
 
+a {
+  text-decoration: none;
+}
+
 p {
   line-height: var(--line-height);
-  font-size: var(--font-size-2);
+  font-size: var(--font-size-1)
 }
 
 img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  z-index: -1;
+  z-index: -3;
 }
 
 .container {
@@ -106,6 +112,6 @@ img {
   font-family: var(--primary-font);
 }
 
-.box {
+.box-shadow {
   box-shadow: var(--box-shadow);
 }
