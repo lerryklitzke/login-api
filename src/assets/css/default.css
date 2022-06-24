@@ -1,3 +1,20 @@
+/* Colors */
+.primary-color {
+  color: var(--primary-color);
+}
+.secondary-color {
+  color: var(--secondary-color);
+}
+.reverse-color {
+  color: var(--reverse-color);
+}
+.light-color {
+  color: var(--light-color);
+}
+.dark-color {
+  color: var(--dark-color);
+}
+
 /* Margin and Padding */
 .mg-1 {
   margin: var(--margin-1);
@@ -32,9 +49,6 @@
 .tx-center {
   text-align: center;
 }
-.tx-light {
-  color: var(--light-color);
-}
 .tx-bold {
   font-weight: bold;
 }
@@ -46,6 +60,9 @@
 .bg-secondary {
   background: var(--secondary-color);
 }
+.bg-reverse {
+  background: var(--reverse-color);
+}
 .bg-light {
   background: var(--light-color);
 }
@@ -53,9 +70,9 @@
   background: var(--dark-color);
 }
 
-/* Heads */
+/* Headers */
 h1 {
-  font-size: 2rem;
+  font-size: 2.2rem;
 }
 h2 {
   font-size: 1.6rem;
@@ -68,6 +85,9 @@ h2 {
 }
 .flex-justify-between {
   justify-content: space-between;
+}
+.flex-align-center {
+  align-items: center;
 }
 
 /* Positions */

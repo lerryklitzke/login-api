@@ -1,10 +1,14 @@
 <template>
-  <nav id="navbar" class="pd-4 bg-secondary p-sticky">
-    <div class="container flex-row flex-justify-between">
+  <nav id="navbar" class="pd-4 bg-light p-sticky">
+    <div class="container flex-row flex-justify-between flex-align-center">
       <div id="logo">
-        <h1 class="tx-light">Todplay</h1>
+        <h1 class="primary-color">Todplay</h1>
       </div>
-      <a href="#" class="btn btn-transparent">Login</a>
+      <base-button
+        classes="btn-reverse"      
+        path="#"
+        title="Register Now"
+      ></base-button>
     </div>
   </nav>
 </template>
