@@ -28,6 +28,8 @@
   --font-size-2: 1.2rem; 
   --font-size-3: 1.4rem; 
   --font-size-4: 1.6rem; 
+  --container-1: 90%;
+  --container-2: 35%;
 }
 
 * {
@@ -59,7 +61,7 @@ img {
 }
 
 .container {
-  width: 90%;
+  width: var(--container-1);
   margin: auto;
 }
 

@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-white">
+  <div class="bg-light">
     <TheNavbar />
     <router-view></router-view>
     <TheFooter />

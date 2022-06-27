@@ -15,7 +15,7 @@
     </label>
     <input type="submit" value="Register" class="btn btn-primary submit">
   </form>
-  <p>Already registered? <a href="/login">Log In</a>.</p>
+  <p>Already registered? <a href="/login"><span class="primary-color">Log In</span></a>.</p>
 </template>
 
 <style scoped>

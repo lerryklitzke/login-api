@@ -2,11 +2,11 @@
   <div class="p-relative content">
     <div class="container p-absolute content">
       <div id="register" class="tx-center">
-        <h2 class="secondary-color">Welcome to Todplay!</h2>
+        <h2 class="dark-color">Welcome to Todplay</h2>
         <p class="dark-color p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, quas. Quia, quibusdam dicta. Magnam, numquam!</p>
         <base-button
           path="/register"
-          classes="btn-reverse"
+          classes="btn-primary"
           class="main-btn"
           title="Sign Up"
         ></base-button>
@@ -19,7 +19,7 @@
 #register {
   display: grid;
   grid-gap: 3.2rem;
-  width: 60%;
+  width: 50%;
   margin: auto;
   padding-top: 12vh;
 }

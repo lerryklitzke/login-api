@@ -9,7 +9,7 @@
     </label>
     <input type="submit" value="Log In" class="btn btn-primary submit">
   </form>
-  <p>Forgot your password? <a href="#">Click here</a>.</p>
+  <p>Forgot your password? <a href="#"><span class="primary-color">Click here</span></a>.</p>
 </template>
 
 <style scoped>

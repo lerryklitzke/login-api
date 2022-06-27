@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <div class="register-container box-shadow">
+    <div class="register-container">
       <RegisterForm />
     </div>
   </div>
@@ -8,6 +8,7 @@
 
 <script>
 import RegisterForm from '../components/layouts/RegisterForm.vue';
+
 export default {
   components: {
     RegisterForm
@@ -24,7 +25,7 @@ span {
   height: 100vh;
 }
 .register-container {
-  width: 50%;
+  width: var(--container-2);
   padding: var(--padding-4);
   margin: auto;
 }
