@@ -1,10 +1,10 @@
 const express = require('express');
-const database = require('./util/database');
+const bodyParser = require('body-parser');
+const userRoutes = require('./routes/usersRoutes');
 
 const app = express();
 
-database.execute('SELECT * FROM users');
-
-app.use()
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use('/admin', userRoutes);
 
 app.listen(3000);

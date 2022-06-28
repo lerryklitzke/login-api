@@ -6,6 +6,12 @@
   </footer>
 </template>
 
+<script>
+export default {
+  props: ['data']
+}
+</script>
+
 <style scoped>
 #footer {
   width: 100%;

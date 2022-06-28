@@ -1,6 +1,6 @@
 <template>
   <form action="#" method="">
-    <h3 class="secondary-color tx-center">Sign In</h3>
+    <h3 class="secondary-color tx-center">Sign Up</h3>
     <label for="name">
       <input type="text" id="name" name="name" placeholder="Name" class="input " required>
     </label>

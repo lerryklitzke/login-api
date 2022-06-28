@@ -14,6 +14,6 @@ export default {
   components: {
     TheNavbar,
     TheFooter
-  }   
+  },
 }
 </script>
