@@ -1,15 +1,17 @@
 <template>
-  <form action="#" method="">
-    <h3 class="secondary-color tx-center">Sign In</h3>
-    <label for="username">
-      <input type="text" id="username" name="username" placeholder="Username or email" class="input" required>
-    </label>
-    <label for="password">
-      <input type="password" id="password" name="password" placeholder="Password" class="input" required>
-    </label>
-    <input type="submit" value="Log In" class="btn btn-primary submit">
-  </form>
-  <p>Forgot your password? <a href="#"><span class="primary-color">Click here</span></a>.</p>
+  <div>
+    <form action="#" method="">
+      <h3 class="secondary-color tx-center">Sign In</h3>
+      <label for="username">
+        <input type="text" id="username" name="username" placeholder="Username or email" class="input" required>
+      </label>
+      <label for="password">
+        <input type="password" id="password" name="password" placeholder="Password" class="input" required>
+      </label>
+      <input type="submit" value="Log In" class="btn btn-primary submit">
+    </form>
+    <p>Forgot your password? <a href="#"><span class="primary-color">Click here</span></a>.</p>
+  </div>
 </template>
 
 <style scoped>
