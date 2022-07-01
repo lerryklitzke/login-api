@@ -1,16 +1,10 @@
 import { createStore } from 'vuex';
 
-import State from './modules/state';
-import Getters from './modules/getters';
-import Mutations from './modules/mutations';
-import Actions from './modules/actions';
+import users from './modules/users';
 
 const store = createStore({
   modules: {
-    State,
-    Getters,
-    Mutations,
-    Actions,
+    users
   }
 });
 

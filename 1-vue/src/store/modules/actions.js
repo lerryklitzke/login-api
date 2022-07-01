@@ -1,4 +1,0 @@
-// ASYNC ACTIONS
-export default {
-  
-}

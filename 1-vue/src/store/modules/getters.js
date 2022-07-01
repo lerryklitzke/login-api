@@ -1,4 +1,0 @@
-// COMPUTED 
-export default {
-  
-}
