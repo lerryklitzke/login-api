@@ -6,11 +6,12 @@ module.exports.getUser = async (req, res, next) => {
 }
 
 module.exports.postUser = (req, res, next) => {
-  const name = req.query.name;
-  const email = req.query.email;
-  const password = req.query.password;
-  const newUser = new Users(name, email, password);
-  res.send(newUser);
+  const name = req.body.name;
+  const email = req.body.email;
+  const password = req.body.password;
+  Users.post(name, email, password);
+  console.log(req.body);
+  res.send();
 }
 
 module.exports.putUser = (req, res, next) => {

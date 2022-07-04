@@ -60,6 +60,11 @@ img {
   z-index: -3;
 }
 
+textarea:focus, 
+input:focus{
+  outline: none;
+}
+
 .container {
   width: var(--container-1);
   margin: auto;
@@ -76,6 +81,9 @@ img {
   font-style: none;
   padding: var(--padding-2);
   border-radius: var(--border-radius); 
+}
+.btn:hover {
+  cursor: pointer;
 }
 .btn-primary { 
   color: var(--light-color);

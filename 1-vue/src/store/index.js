@@ -1,10 +1,10 @@
 import { createStore } from 'vuex';
 
-import users from './modules/users';
+import Users from './modules/users';
 
 const store = createStore({
   modules: {
-    users
+    Users
   }
 });
 

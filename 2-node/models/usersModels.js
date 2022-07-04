@@ -16,7 +16,7 @@ module.exports = class User {
   static post(name, email, password) {
     db.execute(`
       INSERT INTO users (name, email, password) 
-      VALUES (${name}, ${email}, ${password})
+      VALUES ('${name}', '${email}', '${password}')
     `);
   }
   static put(id, name, email, password) {
