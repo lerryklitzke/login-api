@@ -13,18 +13,29 @@ module.exports = class User {
       WHERE id = ${id}
     `);
   }
+
+  static async getUserByEmail(email) {
+    const validUser = await db.execute(`
+      SELECT * FROM users
+      WHERE email = '${email}'
+    `);
+    return validUser[0][0];
+  }
+
   static post(name, email, password) {
     db.execute(`
       INSERT INTO users (name, email, password) 
       VALUES ('${name}', '${email}', '${password}')
     `);
   }
+
   static put(id, name, email, password) {
     db.execute(`
       UPDATE users
       SET name=${name}, email=${email}, password=${password} 
       WHERE id=${id}`);
   }
+
   delete(id) {
     db.execute(`
       DELETE FROM users

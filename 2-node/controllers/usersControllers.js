@@ -11,7 +11,6 @@ module.exports.postUser = (req, res, next) => {
   const password = req.body.password;
   Users.post(name, email, password);
   res.redirect('http://localhost:8080/');
-  res.send();
 }
 
 module.exports.putUser = (req, res, next) => {

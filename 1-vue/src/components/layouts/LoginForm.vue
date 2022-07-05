@@ -1,9 +1,9 @@
 <template>
   <div>
-    <form action="#" method="">
+    <form action="http://localhost:3000/auth/login" method="POST">
       <h3 class="secondary-color tx-center">Sign In</h3>
       <label for="username">
-        <input type="text" id="username" name="username" placeholder="Username or email" class="input" required>
+        <input type="text" id="username" name="username" placeholder="Email" class="input" required>
       </label>
       <label for="password">
         <input type="password" id="password" name="password" placeholder="Password" class="input" required>
