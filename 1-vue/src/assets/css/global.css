@@ -10,6 +10,8 @@
   --light-color: #f4f4f4;
   --dark-color: #00171f;
   --white-color: #fff;
+  --warn-color: rgb(255, 69, 69);
+  --success-color: rgb(53, 231, 53);
   --transparent-color: rgb(0, 0, 0, 0.3);
   --padding-1: 5px;
   --padding-2: 10px;

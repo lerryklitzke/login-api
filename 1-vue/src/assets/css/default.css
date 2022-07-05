@@ -17,6 +17,12 @@
 .white-color {
   color: var(--white-color);
 }
+.warn-color {
+  color: var(--warn-color);
+}
+.success-color {
+  color: var(--success-color);
+}
 
 /* Margin and Padding */
 .mg-1 {

@@ -1,10 +1,9 @@
 <template>
   <div>
-    <form :action="url" method="POST">
+    <form action="http://localhost:3000/admin/users/" method="POST" @submit="submitForm">
       <h3 class="secondary-color tx-center">Sign Up</h3>
       <label for="name">
         <input
-          v-model="name"
           type="text"
           id="name"
           name="name"
@@ -15,7 +14,6 @@
       </label>
       <label for="email">
         <input
-          v-model="email"
           type="email"
           id="email"
           name="email"
@@ -24,6 +22,7 @@
           required
         />
       </label>
+      <p v-if="invalidPass" class="warn-color mg-0">Passwords does not match!</p>
       <label for="password">
         <input
           v-model="pass1"
@@ -49,7 +48,6 @@
         />
       </label>
       <input
-        @click="sendForm"
         type="submit"
         value="Register"
         class="btn btn-primary submit"
@@ -67,12 +65,10 @@
 export default {
   data() {
     return {
+      invalidPass: false,
       validPass: false,
-      name: '',
-      email: '',
       pass1: '',
-      pass2: '',
-      url: '',
+      pass2: ''
     };
   },
   methods: {
@@ -83,11 +79,15 @@ export default {
         this.validPass = true;
       }
     },
-    sendForm() {
-      if (this.validPass && this.name !== '' && this.email.length > 5) {
-        this.url = `http://localhost:3000/admin/users/?name=${this.name}&email=${this.email}&password=${this.pass1}`;
+    submitForm(e) {
+      if (!this.validPass) {
+        this.invalidPass = true;
+        setTimeout(() => {
+          this.invalidPass = false;
+        }, 3000)
+        e.preventDefault();
       }
-    },
+    }
   },
 };
 </script>
@@ -106,9 +106,9 @@ p {
   border: none;
 }
 .red {
-  border: rgb(255, 69, 69) 3px solid;
+  border: var(--warn-color) 3px solid;
 }
 .green {
-  border: rgb(53, 231, 53) 3px solid;
+  border: var(--success-color) 3px solid;
 }
 </style>

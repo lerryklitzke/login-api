@@ -10,7 +10,7 @@ module.exports.postUser = (req, res, next) => {
   const email = req.body.email;
   const password = req.body.password;
   Users.post(name, email, password);
-  console.log(req.body);
+  res.redirect('http://localhost:8080/');
   res.send();
 }
 
