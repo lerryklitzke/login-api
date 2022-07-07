@@ -1,3 +1,4 @@
+const bcrypt = require('bcryptjs');
 const Users = require('../models/usersModels');
 
 module.exports.getUser = async (req, res, next) => {
@@ -5,11 +6,12 @@ module.exports.getUser = async (req, res, next) => {
   res.send(data[0][0]);
 }
 
-module.exports.postNewUser = (req, res, next) => {
+module.exports.postNewUser = async (req, res, next) => {
   const name = req.body.name;
   const email = req.body.email;
   const password = req.body.password;
-  Users.postUser(name, email, password);
+  const encryptedPass = await bcrypt.hash(password, 12);
+  Users.postUser(name, email, encryptedPass);
   res.redirect('http://localhost:8080/login');
 }
 

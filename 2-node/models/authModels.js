@@ -1,15 +1,21 @@
+const bcrypt = require('bcryptjs');
 const User = require('./usersModels');
 
 module.exports = class Auth {
 
   static async login(email, password) {
     const user = await User.getUserByEmail(email);
-    if (user === undefined) {
-      return false;
-    } else if (user.password !== password) {
+
+    if (!user) {
       return false;
     } else {
-      return true;
+      const validPass = await bcrypt.compare(password, user.password);
+      
+      if (!validPass) {
+        return false;
+      } else {
+        return true;
+      }
     }
   }
 
