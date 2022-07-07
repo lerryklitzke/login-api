@@ -22,7 +22,7 @@ module.exports = class User {
     return validUser[0][0];
   }
 
-  static post(name, email, password) {
+  static postUser(name, email, password) {
     db.execute(`
       INSERT INTO users (name, email, password) 
       VALUES ('${name}', '${email}', '${password}')

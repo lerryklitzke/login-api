@@ -109,9 +109,9 @@ input:focus{
   background: var(--dark-color);
 }
 .btn-transparent {
-  color: var(--light-color);
+  color: var(--secondary-color);
   background: none;
-  border: var(--light-color) 1px solid;
+  border: var(--secondary-color) 1px solid;
 }
 
 .input {

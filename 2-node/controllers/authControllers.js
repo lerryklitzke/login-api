@@ -13,6 +13,8 @@ module.exports.login = async (req, res, next) => {
   }
 }
 
-module.exports.logout = async (req, res, next) => {
-
+module.exports.logout = (req, res, next) => {
+  req.session.destroy(() => {
+    res.redirect('http://localhost:8080/');
+  });
 }

@@ -5,12 +5,12 @@ module.exports.getUser = async (req, res, next) => {
   res.send(data[0][0]);
 }
 
-module.exports.postUser = (req, res, next) => {
+module.exports.postNewUser = (req, res, next) => {
   const name = req.body.name;
   const email = req.body.email;
   const password = req.body.password;
-  Users.post(name, email, password);
-  res.redirect('http://localhost:8080/');
+  Users.postUser(name, email, password);
+  res.redirect('http://localhost:8080/login');
 }
 
 module.exports.putUser = (req, res, next) => {
