@@ -18,3 +18,10 @@ module.exports.logout = (req, res, next) => {
     res.redirect('http://localhost:8080/');
   });
 }
+
+module.exports.protectRoute = (req, res, next) => {
+  if (!req.session.logged) {
+    return res.redirect('http://localhost:8080/login');
+  }
+  next();
+}

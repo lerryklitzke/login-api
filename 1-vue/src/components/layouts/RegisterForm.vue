@@ -25,6 +25,7 @@
       <p v-if="invalidPass" class="warn-color mg-0">Passwords does not match!</p>
       <label for="password">
         <input
+          @keyup="validatePassword"
           v-model="pass1"
           type="password"
           id="password"
