@@ -2,7 +2,10 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const session = require('express-session');
+const csrf = require('csurf');
+
 const MySQLStore = require('express-mysql-session')(session);
+const csrfProtection = csrf();
 
 const options = {
   host: 'localhost',

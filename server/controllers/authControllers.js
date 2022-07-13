@@ -4,7 +4,6 @@ module.exports.login = async (req, res, next) => {
   const username = req.body.username;
   const password = req.body.password;
   const authorized = await Auth.login(username, password);
-
   if (authorized) {
     req.session.logged = authorized;
     res.redirect('http://localhost:8080/home');
@@ -19,9 +18,6 @@ module.exports.logout = (req, res, next) => {
   });
 }
 
-module.exports.protectRoute = (req, res, next) => {
-  if (!req.session.logged) {
-    return res.redirect('http://localhost:8080/login');
-  }
-  next();
+module.exports.csrfToken = async (req, res, next) => {
+  res.send({ csrfToken: req.csrfToken() });
 }

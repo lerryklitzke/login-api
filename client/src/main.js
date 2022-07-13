@@ -7,11 +7,13 @@ import './assets/css/global.css';
 
 // Global Components
 import BaseButton from './components/UI/BaseButton';
+import BaseForm from './components/UI/BaseForm';
 
 // App
 const app = createApp(App);
 
 app.component('base-button', BaseButton);
+app.component('base-form', BaseForm);
 
 app.use(router);
 app.use(store);

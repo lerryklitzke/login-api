@@ -15,5 +15,8 @@ export default {
     TheNavbar,
     TheFooter
   },
+  async mounted() {
+    
+  }
 }
 </script>
