@@ -1,7 +1,7 @@
 <template>
   <div>
     <base-form
-      action="http://localhost:3000/users"
+      action="http://localhost:3000/admin/users"
       method="POST"
       :submit="submitForm"
     >

@@ -5,10 +5,11 @@ module.exports.login = async (req, res, next) => {
   const password = req.body.password;
   const authorized = await Auth.login(username, password);
   if (authorized) {
-    req.session.logged = authorized;
-    res.redirect('http://localhost:8080/home');
+    req.session.logged = true;
+    console.log(req.body);
+    res.json({ authenticated: true });
   } else {
-    res.redirect('http://localhost:8080/login');
+    res.status(404);
   }
 }
 
